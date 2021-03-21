@@ -1,0 +1,41 @@
+.port-contact-container {
+	padding: 40px 0px 20px;
+	.page-info {
+		.page-title {
+			font-size: 28px;
+			font-weight: 700;
+		}
+		.page-desc {
+			font-size: 18px;
+		}
+	}
+	.social-contacts-row {
+		margin-top: 50px;
+		.contacts-box {
+			.contact-item {
+				a {
+					//text-decoration: none;
+					color: #6A5ACD;
+					/*font-weight: 500;*/
+				}
+				.label {
+
+				}
+				.links-icon {
+					display: inline-flex;
+					align-items: center;
+					.icon {
+						margin-right: 10px;
+						width: 20px;
+					}
+					.link {
+
+					}
+				}
+				&:nth-child(2) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}

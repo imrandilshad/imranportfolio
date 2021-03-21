@@ -1,0 +1,57 @@
+.port-sills-container {
+	padding: 40px 0px 20px;
+
+	.page-info {
+		//padding: 0px 20px;
+		.page-title {
+			font-size: 28px;
+			font-weight: 700;
+		}
+		.page-desc {
+			font-size: 18px;
+		}
+	}
+
+	.skills-box {
+		margin: 50px auto 0 auto;
+		width: 70%;
+		//padding: 0 20px;
+		.skill-item {
+			margin-top: 15px;
+			.name {
+				font-size: 14px;
+				font-weight: 500;
+			}
+			.bar-width {
+				width: 100%;
+				background: lightgray;
+				height: 14px;
+				border-radius: 10px;
+
+				.percent-width {
+					transition: ease 3s all;
+					width: 6%;
+					height: inherit;
+					border-radius: inherit;
+					background: #6A5ACD;	
+					color:white;
+					font-size: 10.5px;
+					padding: 0 5px;
+					font-weight: bold;
+					text-align: right;
+
+					&.html {width: 80%;}
+					&.css {width: 80%;}
+					&.bootstrap {width: 65%;}
+					&.js {width: 65%;}
+					&.react {width: 80%;}
+					&.redux {width: 70%;}
+					&.thunk {width: 60%;}
+					&.saga {width: 40%;}
+					&.node {width: 20%;}
+					&.git {width: 65%;}
+				}
+			}
+		}
+	}
+}

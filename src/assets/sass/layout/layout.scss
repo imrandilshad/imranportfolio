@@ -1,0 +1,35 @@
+.port-layout-container {
+	/*display: flex;*/
+	.sidebar-layout {
+		/*background: rgba(145,13,13,.9);*/
+		/*background: linear-gradient(270deg, #4979E1 -0.62%, #812AD7 100%);*/
+		background: linear-gradient(130deg,  #800080 0%, #4979E1 100%);
+		width: 25%;
+		overflow: hidden;
+		height: 100%;
+		min-height: 100vh;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 99;
+		overflow-y: auto;
+		@media screen and (max-width: 767px) {
+		  display: none;
+		}
+	}
+	.content-layout {
+		background:#F5F5F5;
+		overflow: hidden;
+		min-height: 100vh;
+		height: 100%;
+		width: 75%;
+		padding: 0 20px;
+		margin-left: 25%;
+		/*padding: 40px 50px;*/
+		@media screen and (max-width: 767px) {
+			margin: 0;
+			width: 100%;	
+		}
+	}
+}
