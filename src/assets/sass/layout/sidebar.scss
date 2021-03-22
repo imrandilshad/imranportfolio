@@ -106,4 +106,22 @@
 			}
 		}
 	}
+	.collapse-icon-toggle {
+		position: absolute;
+		top: 0;
+		right: -10px;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: black;
+		cursor: pointer;
+		.icon {
+			font-size: 16px;
+			color: white;
+		}
+	}
 }

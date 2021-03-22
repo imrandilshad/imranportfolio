@@ -26,7 +26,7 @@ const data = [
 
 const SideBar = () => {
     return (
-        <aside className="port-sidebar-container">
+        <div className="port-sidebar-container">
         	<div className="sidebar-inner">
         		<div className="profile">
         			<div className="profile-image">
@@ -76,7 +76,10 @@ const SideBar = () => {
                 }
                 </div>
             </div>
-        </aside>
+            {/*<div className="collapse-icon-toggle">
+                <FontAwesomeIcon className="icon" icon={faAngleRight} />
+            </div>*/}
+        </div>
     );
 };
 
