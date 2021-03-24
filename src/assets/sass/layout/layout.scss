@@ -12,10 +12,14 @@
 		top: 0;
 		bottom: 0;
 		left: 0;
+		transition: all .2s ease;
 		/*z-index: 99;*/
 		/*overflow-y: auto;*/
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 480px) {
 		  display: none;
+		}
+		&.layout--collapse {
+			width: 5%;
 		}
 	}
 	.content-layout {
@@ -26,10 +30,15 @@
 		width: 75%;
 		padding: 0 20px;
 		margin-left: 25%;
+		transition: all .2s ease;
 		/*padding: 40px 50px;*/
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 480px) {
 			margin: 0;
 			width: 100%;	
+		}
+		&.layout--collapse {
+			width: 95%;
+			margin-left: 5%;
 		}
 	}
 }

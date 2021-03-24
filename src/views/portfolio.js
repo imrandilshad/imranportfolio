@@ -30,7 +30,7 @@ const Portfolio = () => {
                 {
                     data && data.map((item,index)=>(
                     <Row className="portfolio-wrapper" key={"portfolio-" + index}>
-                        <Col md="4" className="image-box">
+                        <Col lg="4" className="image-box">
                             {
                                 item.images && item.images.length > 0 ?
                                 <div 
@@ -46,7 +46,7 @@ const Portfolio = () => {
                                 null
                             }
                         </Col>
-                        <Col md="8" className="detail-box">
+                        <Col lg="8" className="detail-box">
                             <div className="product-title">
                                 { 
                                     item.title ? item.title : null

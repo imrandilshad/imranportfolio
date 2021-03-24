@@ -13,13 +13,16 @@
 		margin-top: 50px;
 		.contacts-box {
 			.contact-item {
+				@media screen and (max-width: 480px) {
+					margin-top: 10px;
+				}
 				a {
 					//text-decoration: none;
 					color: #6A5ACD;
 					/*font-weight: 500;*/
 				}
 				.label {
-
+					font-weight: 500;
 				}
 				.links-icon {
 					display: inline-flex;
@@ -33,7 +36,9 @@
 					}
 				}
 				&:nth-child(2) {
-					margin-bottom: 15px;
+					@media screen and (min-width: 480px) {
+						margin-bottom: 15px;
+					}
 				}
 			}
 		}

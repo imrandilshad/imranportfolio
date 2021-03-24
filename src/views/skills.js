@@ -19,6 +19,9 @@ const Skills = () => {
     const [isLoaded, setLoaded] = useState(false);
     useEffect(() => {
         setLoaded(true)
+        return () => {
+            setLoaded(false)
+        }
     }, [])
     return (
         <div className="port-sills-container">
