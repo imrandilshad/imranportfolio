@@ -2,6 +2,7 @@ import React, { useReducer } from 'react'
 import { Route, Switch } from 'react-router-dom';
 import classNames from 'classnames'
 
+import Header from '../header';
 import SideBar from '../sideBar';
 import Home from '../home';
 import Contact from '../contact';
@@ -38,6 +39,9 @@ const Layout = () => {
     return (
     	<SidebarContext.Provider value={{isSidebarCollapsed: sidebar, setSidebarCollapsed: dispatch}}>
 	        <div className="port-layout-container">
+	        	<div className="header-layout">
+	        		<Header />
+	        	</div>
 	        	<div className={sidebarClasses}>
 			        <SideBar />
 		      	</div>

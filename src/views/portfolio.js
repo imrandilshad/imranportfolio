@@ -31,6 +31,11 @@ const Portfolio = () => {
                     data && data.map((item,index)=>(
                     <Row className="portfolio-wrapper" key={"portfolio-" + index}>
                         <Col lg="4" className="image-box">
+                            <div className="product-title">
+                                { 
+                                    item.title ? item.title : null
+                                }
+                            </div>
                             {
                                 item.images && item.images.length > 0 ?
                                 <div 

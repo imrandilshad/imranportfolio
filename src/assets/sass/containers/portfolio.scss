@@ -18,6 +18,14 @@
 			padding: 0;
 		}
 		.image-box {
+			.product-title {
+				font-size: 20px;
+				font-weight: 600;
+				display: none;
+				@media screen and (max-width: 768px) {
+					display: block;
+				}
+			}
 			.image-container {
 				position: relative;
 				cursor: pointer;
@@ -61,13 +69,14 @@
 			.product-title {
 				font-size: 20px;
 				font-weight: 700;
-				@media screen and (max-width: 480px) {
-					margin-top: 15px;
+				@media screen and (max-width: 768px) {
+					display: none;
 				}
 			}
 			.product-desc {
 				font-size: 16px;
 				margin: 10px 0;
+				text-align: justify;
 			}
 			.tools-box {
 				.tech-title {

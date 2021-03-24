@@ -1,0 +1,61 @@
+.port-header-container {
+	display: none;
+	@media screen and (max-width: 480px) {
+	  display: block;
+	}
+	background: linear-gradient(130deg,  #800080 0%, #4979E1 100%);
+	.sidepanel  {
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		/*height: 270px;*/
+		top: 0;
+		right: 0;
+		/*background-color: #111;*/
+		background: linear-gradient(130deg,  #800080 0%, #4979E1 100%);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 40px;
+			a {
+			  padding: 8px 8px 8px 32px;
+			  text-decoration: none;
+			  font-size: 16px;
+			  color: white;
+			  display: flex;
+			  transition: 0.1s;
+			  overflow-x: hidden;
+			}
+			a:last-child {
+				padding-bottom: 30px;
+			}
+			.active-link {
+				font-weight: bold;
+			}
+			.closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				color: white;
+			}
+		}
+
+	.header-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 20px;
+
+		.logo {
+			img {
+				width: 40px; 
+				height: auto;
+				border-radius: 50%; 
+			}
+		}
+		.hamburger-icon {
+			color: white;
+			font-size: 22px;
+		}
+	}	
+}
